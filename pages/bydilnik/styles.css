@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&family=Lato:wght@400;700;900&family=Libre+Baskerville&family=Public+Sans:wght@200;400&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap');
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+    height:100%;width:100%;
+    font-size:100%;line-height:1;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+a{color:inherit;}
+
+@font-face {
+    font-family: "Seven Segment";
+    src: url("../../fonts/Seven Segment.ttf");
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+html,body{
+    font-family: JetBrains Mono,sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+.header__home{
+    position: absolute;
+    margin: 2% 3%;
+    background: transparent;
+}
+#sound-button{
+    cursor: pointer;
+    position: absolute;
+    top: 3.5%;
+    left:7.4%;
+    height: 50px;
+    width: 50px;
+}
+#reset-button {
+    display: none;
+    width: 78px;
+    height: 38px;
+    border-radius: 30px;
+    background: #3585e1;
+    transition: all .3s ease-in-out;
+}
+#reset-button:hover{
+    transform: scale(1.1);
+}
+.timer__stop-button{
+    color: #FFD6D6;
+    font-size: 12px;
+}
+.timer__display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    background: #d6ffe8;
+    font-size: 1.5em;
+    gap: 15px;
+}
+.date__now,.date__set,.timer__hours,.timer__min,.timer__sec{
+    font-family: "Seven Segment", sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.timer__display > span{
+    font-size: 0.8em;
+}
+.timer-ellipse{
+    margin-top:50px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: #35e166;
+}
+.timer__form {
+    margin-top: 13%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.timer__input-hour,
+.timer__input-min,
+.timer__input-sec {
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+.wrap{
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    background: #d6ffe2;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.ellipse{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    height: 500px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: rgba(129, 255, 115, 0.25);
+    margin: -5% auto;
+}
+.timer-title{
+    padding-bottom:10px ;
+}
+.timer{
+    display: flex;
+    margin: 4% auto;
+    color: #00a63a;
+    font-size: 48px;
+    line-height: normal;
+}
+
+.timer-block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.timer-inputs{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.timer-div{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.three-buttons{
+    display: flex;
+    gap:3.2rem;
+    margin:55px auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    transition: all .3s ease-in-out;
+
+}
+.button1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 78px;
+    height: 38px;
+    border-radius: 30px;
+    background: #35e152;
+    transition: all .3s ease-in-out;
+}
+
+.button1:hover{
+    transform: scale(1.1);
+
+}
+.button2{
+    transform: scale(1.1);
+}
+
+

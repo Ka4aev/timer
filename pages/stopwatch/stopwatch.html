@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+    <a href="../main/index.html" class="header__home"><img alt="дом" src="../../images/timer/home.svg"></a>
+    <img src="../../images/timer/sound-on.svg" id="sound-button" alt="sound-off">
+    <span class="timer timer-title">Секундомер</span>
+    <div class="ellipse">
+        <div class="timer-block">
+
+            <div class="timer-ellipse">
+                <div class="timer__display">
+                    <div class="timer-watching">
+                        <span class="timer__hours">00:</span>
+                        <span class="timer__min">00:</span>
+                        <span class="timer__sec">00.</span>
+                        <span class="timer__milisec">00</span></div>
+
+                </div>
+            </div>
+
+            <form autocomplete="off" class="form timer__form">
+
+                <div class="three-buttons">
+                    <button type="button" class="timer__button button1"><img src="../../images/timer/start-white.png" class="start" alt=""></button>
+                    <button type="button" class="timer__reset-button button1"><img src="../../images/timer/restart-button.png" class="rectangle" alt=""></button>
+
+                    <audio id="tick-sound" src="../../audio/timer-play.mp3" preload="auto"></audio>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="../../scripts/script-stopwatch.js">
+
+</script>
+</body>
+</html>
